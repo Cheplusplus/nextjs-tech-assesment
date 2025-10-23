@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import styles from "./page.module.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <main className={styles.main}>{children}</main>
+      </body>
     </html>
   );
 }

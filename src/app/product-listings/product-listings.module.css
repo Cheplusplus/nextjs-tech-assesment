@@ -1,0 +1,85 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+
+  justify-content: center;
+  width: 100%;
+  justify-items: center; /* horizontal centering inside each cell */
+}
+
+.product_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+
+  padding: 1rem;
+  background: rgb(65, 71, 73);
+  border-radius: 15px;
+}
+
+.product_card h2 {
+  font-weight: bold;
+  max-height: 100px;
+}
+
+.hover_card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 500px;
+  background-color: black;
+  color: white;
+}
+
+.card_buttons {
+  display: flex;
+  gap: 1rem;
+
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.card_buttons button {
+  padding: 1rem;
+}
+
+.card_text {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+
+  height: 50%;
+}
+
+.product_image {
+  height: 150px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.product_title_text {
+  height: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 1rem 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; /* medium */
+  font-size: 1rem; /* adjust as needed */
+}
+
+.product_category_text {
+  height: 15%;
+}
+
+.product_price_text {
+  height: 5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900; /* medium */
+  font-size: 1rem; /* adjust as needed */
+}
