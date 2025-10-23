@@ -6,7 +6,8 @@ Time Spent: 5 hours
 Trade-offs: Styling for functionality.
 AI assistance used when blocked.
 
-Vercel Link:
+Vercel Link: https://nextjs-tech-assesment-git-main-cheplusplus-projects.vercel.app/
+Figma planning: https://www.figma.com/board/hmypFjqt5s1cv1s5RqxZEw/Nextjs-Technical-Assessment?node-id=0-1&t=dj8PryXUQXD3oiqo-1
 
 ## Features
 
