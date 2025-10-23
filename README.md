@@ -1,6 +1,6 @@
 # Next.js Product Listings & Shopping Cart
 
-A modern, responsive e-commerce product listing application built with **Next.js 13**, **Tailwind CSS**, and **ShadCN UI components**. This project demonstrates dynamic routing, product detail pages, and a fully functional client-side shopping cart stored in localStorage.
+A modern, responsive e-commerce product listing application built with **Next.js**, **Tailwind CSS**, and **ShadCN UI components**. This project demonstrates dynamic routing, product detail pages, and a fully functional client-side shopping cart stored in localStorage.
 
 Time Spent: 5 hours  
 Trade-offs: Styling for functionality.  
@@ -28,7 +28,6 @@ Figma planning: https://www.figma.com/board/hmypFjqt5s1cv1s5RqxZEw/Nextjs-Techni
   - Stored in **localStorage**, persists across page reloads.
   - Increment and decrement product quantities.
   - Prevents negative quantities.
-  - Calculates total price automatically.
 
 - **UI & Styling**
   - Tailwind CSS for rapid styling and responsive layouts.
@@ -78,8 +77,6 @@ Shows image, title, description, price, category, and rating.
 ### Shopping Cart
 
 Increment/decrement product quantities.
-
-Auto-calculates total price.
 
 Prevents negative quantities.
 
