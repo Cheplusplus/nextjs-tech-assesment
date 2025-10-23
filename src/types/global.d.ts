@@ -7,6 +7,9 @@ declare global {
     category: string;
     image: string;
   }
+
+  type Cart = Record<string, number>;
+  type CartAction = "increment" | "decrement";
 }
 
 // If the file doesn't export anything else,

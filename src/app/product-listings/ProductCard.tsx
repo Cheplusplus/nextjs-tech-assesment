@@ -2,9 +2,12 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/h
 import styles from "./product-listings.module.css";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import AddToCartButton from "./CardButtons";
+
 interface ProductCardProps {
   product: Product;
 }
+
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <div className={styles.product_card}>
@@ -13,7 +16,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
       <h2 className={styles.product_title_text}>{product.title}</h2>
       <p className={styles.product_category_text}>Category: {product.category}</p>
       <p className={styles.product_price_text}>Price: R {product.price}</p>
-
       <div className={styles.card_buttons}>
         <HoverCard>
           <HoverCardTrigger>
@@ -25,9 +27,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             <div className={styles.hover_card}>{product.description}</div>
           </HoverCardContent>
         </HoverCard>
-        <Button variant="outline" size="default">
-          Add to Cart
-        </Button>
+        <AddToCartButton productId={product.id} />
       </div>
     </div>
   );

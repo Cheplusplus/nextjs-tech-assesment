@@ -1,0 +1,9 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  height: 15%;
+  background: red;
+  z-index: 99;
+  border: 2px solid red;
+  width: 100%;
+}

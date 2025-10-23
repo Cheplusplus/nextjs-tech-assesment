@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import "./globals.css";
+import Navbar from "@/components/NavBar/Navbar";
 
 export const metadata: Metadata = {
   title: "Nextjs Technical Assesment",
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Navbar />
         <main className={styles.main}>{children}</main>
       </body>
     </html>
