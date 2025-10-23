@@ -6,6 +6,8 @@ Time Spent: 5 hours
 Trade-offs: Styling for functionality.
 AI assistance used when blocked.
 
+Vercel Link:
+
 ## Features
 
 - **Product Listings Page**
@@ -31,24 +33,6 @@ AI assistance used when blocked.
   - Tailwind CSS for rapid styling and responsive layouts.
   - ShadCN components for buttons, hover cards, and interactive UI elements.
   - Roboto font for clean typography.
-
-## Folder Structure
-
-```text
-src/
-├─ app/
-│  ├─ products/
-│  │  ├─ [id]/page.tsx
-│  │  └─ page.tsx
-├─ components/
-│  ├─ ProductCard.tsx
-│  ├─ CartItem.tsx
-│  └─ QuantitySelector.tsx
-├─ lib/
-│  ├─ helpers.ts
-├─ styles/
-│  └─ globals.css
-```
 
 ### Running Locally
 
