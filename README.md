@@ -44,7 +44,7 @@ Open http://localhost:3000
 
 ### Technologies Used
 
-Next.js 13 (App Router) – Server-side rendering and client-side interactivity.
+Next.js (App Router) – Server-side rendering and client-side interactivity.
 
 Tailwind CSS – Utility-first styling framework.
 
