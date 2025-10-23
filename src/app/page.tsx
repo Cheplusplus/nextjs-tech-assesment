@@ -8,8 +8,8 @@ export default function Home() {
       <div className="max-w-3xl text-center">
         <h1 className="text-5xl font-bold mb-4 text-gray-800">Next.js Product Listings & Shopping Cart</h1>
         <p className="text-lg text-gray-600 mb-6">
-          A modern e-commerce demo built with <strong>Next.js 13</strong>, <strong>Tailwind CSS</strong>, and <strong>ShadCN UI</strong> components. Features dynamic product pages, a responsive product grid, and a fully client-side shopping cart
-          using localStorage.
+          A modern e-commerce demo built with <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, and <strong>ShadCN UI</strong> components. Features dynamic product pages, a responsive product grid, and a fully client-side shopping cart using
+          localStorage.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
