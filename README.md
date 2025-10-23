@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Product Listings & Shopping Cart
 
-## Getting Started
+A modern, responsive e-commerce product listing application built with **Next.js 13**, **Tailwind CSS**, and **ShadCN UI components**. This project demonstrates dynamic routing, product detail pages, and a fully functional client-side shopping cart stored in localStorage.
 
-First, run the development server:
+Time Spent: 5 hours
+Trade-offs: Styling for functionality.
+AI assistance used when blocked.
+
+## Features
+
+- **Product Listings Page**
+
+  - Fetches products from [FakeStore API](https://fakestoreapi.com/).
+  - Responsive grid layout that automatically adjusts column count based on screen width.
+  - Card-based design with image, title, price, and category.
+
+- **Single Product Page**
+
+  - Dynamic routes (`/products/[id]`).
+  - Displays full product details: image, title, description, price, category, and rating.
+  - Add-to-cart button with interactive client-side functionality.
+
+- **Shopping Cart**
+
+  - Stored in **localStorage**, persists across page reloads.
+  - Increment and decrement product quantities.
+  - Prevents negative quantities.
+  - Calculates total price automatically.
+
+- **UI & Styling**
+  - Tailwind CSS for rapid styling and responsive layouts.
+  - ShadCN components for buttons, hover cards, and interactive UI elements.
+  - Roboto font for clean typography.
+
+## Folder Structure
+
+```text
+src/
+├─ app/
+│  ├─ products/
+│  │  ├─ [id]/page.tsx
+│  │  └─ page.tsx
+├─ components/
+│  ├─ ProductCard.tsx
+│  ├─ CartItem.tsx
+│  └─ QuantitySelector.tsx
+├─ lib/
+│  ├─ helpers.ts
+├─ styles/
+│  └─ globals.css
+```
+
+### Running Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Next.js 13 (App Router) – Server-side rendering and client-side interactivity.
 
-## Learn More
+Tailwind CSS – Utility-first styling framework.
 
-To learn more about Next.js, take a look at the following resources:
+ShadCN UI Components – Accessible and composable React components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+TypeScript – Strongly typed codebase.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+localStorage – Persisting shopping cart data on the client.
 
-## Deploy on Vercel
+FakeStore API – Dummy product data for demonstration.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features in Detail
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Product Listing
+
+Responsive grid layout with auto-fill columns.
+
+Card displays product image, title, price, and category.
+
+Clicking a card navigates to the product detail page.
+
+### Product Page
+
+Displays all product details fetched from API.
+
+Shows image, title, description, price, category, and rating.
+
+“Add to Cart” button adds the product to the localStorage cart.
+
+### Shopping Cart
+
+Increment/decrement product quantities.
+
+Auto-calculates total price.
+
+Prevents negative quantities.
+
+Fully reactive using React state.
+
+License
+
+MIT License © 2025 Che Fidel Overmeyer
