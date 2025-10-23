@@ -45,6 +45,7 @@
 
 .card_buttons button {
   padding: 1rem;
+  cursor: pointer;
 }
 
 .card_text {

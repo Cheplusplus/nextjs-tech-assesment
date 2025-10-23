@@ -4,8 +4,15 @@ import styles from "./navbar.module.css";
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <h1>test</h1>
-      <Image src="/next.svg" alt="test" width={100} height={100} />
+      <h1>Logo</h1>
+
+      <nav>
+        <div className={styles.nav}>
+          <p>Home</p>
+          <p>Shop Now</p>
+          <p>Cart</p>
+        </div>
+      </nav>
     </div>
   );
 };
