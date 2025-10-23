@@ -41,7 +41,7 @@ async function getProductById(id: string | number): Promise<Product> {
 }
 
 interface ProductPageProps {
-  params: { id: string };
+  params: { id: string } | Promise<any>;
 }
 
 const page = async ({ params }: ProductPageProps) => {
