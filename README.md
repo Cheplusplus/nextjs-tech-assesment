@@ -2,11 +2,11 @@
 
 A modern, responsive e-commerce product listing application built with **Next.js 13**, **Tailwind CSS**, and **ShadCN UI components**. This project demonstrates dynamic routing, product detail pages, and a fully functional client-side shopping cart stored in localStorage.
 
-Time Spent: 5 hours
-Trade-offs: Styling for functionality.
+Time Spent: 5 hours  
+Trade-offs: Styling for functionality.  
 AI assistance used when blocked.
 
-Vercel Link: https://nextjs-tech-assesment-git-main-cheplusplus-projects.vercel.app/
+Vercel Link: https://nextjs-tech-assesment-git-main-cheplusplus-projects.vercel.app/  
 Figma planning: https://www.figma.com/board/hmypFjqt5s1cv1s5RqxZEw/Nextjs-Technical-Assessment?node-id=0-1&t=dj8PryXUQXD3oiqo-1
 
 ## Features
