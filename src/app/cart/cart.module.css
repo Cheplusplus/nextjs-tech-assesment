@@ -1,0 +1,13 @@
+.cart_item_list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.quantity_selector {
+  display: flex;
+}
+
+.quantity_selector button {
+  padding: 1rem;
+  margin: 0 1rem;
+}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import "./globals.css";
-import Navbar from "@/components/NavBar/Navbar";
+import Navbar from "@/components/NavBar/NavBar";
 
 export const metadata: Metadata = {
   title: "Nextjs Technical Assesment",

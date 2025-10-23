@@ -1,5 +1,13 @@
+import CartItemList from "./CartItemList";
+import SideBar from "./SideBar";
+
 const page = () => {
-  return <div></div>;
+  return (
+    <div>
+      <CartItemList />
+      <SideBar />
+    </div>
+  );
 };
 
 export default page;

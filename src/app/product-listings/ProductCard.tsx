@@ -3,6 +3,7 @@ import styles from "./product-listings.module.css";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import AddToCartButton from "./CardButtons";
+import Link from "next/link";
 
 interface ProductCardProps {
   product: Product;
@@ -16,19 +17,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
       <h2 className={styles.product_title_text}>{product.title}</h2>
       <p className={styles.product_category_text}>Category: {product.category}</p>
       <p className={styles.product_price_text}>Price: R {product.price}</p>
-      <div className={styles.card_buttons}>
-        <HoverCard>
-          <HoverCardTrigger>
-            <Button variant="outline" size="default">
-              More Details
-            </Button>
-          </HoverCardTrigger>
-          <HoverCardContent sideOffset={-300} align="start">
-            <div className={styles.hover_card}>{product.description}</div>
-          </HoverCardContent>
-        </HoverCard>
-        <AddToCartButton productId={product.id} />
-      </div>
+
+      <AddToCartButton productId={product.id} productDescription={product.description} />
     </div>
   );
 };
